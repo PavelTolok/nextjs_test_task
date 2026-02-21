@@ -1,0 +1,144 @@
+.hero {
+  background: var(--color-surface);
+  padding: 4rem 0;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    padding: 2rem 0;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  @media (max-width: 480px) {
+    padding: 0 1.25rem;
+  }
+}
+
+.title {
+  font-weight: 400;
+  font-size: 7.5rem;
+  line-height: 1.1;
+  letter-spacing: -1.92px;
+  text-shadow: 0px 4px 4px var(--color-shadow);
+  margin-bottom: 1rem;
+  color: var(--color-black);
+  font-family: var(--font-young-serif);
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.75rem;
+    letter-spacing: -0.5px;
+    margin-bottom: 1.25rem;
+  }
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 2rem;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+}
+
+.searchContainer {
+  display: flex;
+  align-items: stretch;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid var(--color-border-warm);
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px var(--color-shadow-sm);
+  padding: 6px;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    padding: 5px;
+    border-radius: 9999px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 4px;
+  }
+}
+
+.searchInput {
+  flex: 1;
+  padding: 0.65rem 1.25rem;
+  border: none;
+  border-radius: 50px 0 0 50px;
+  font-size: 1rem;
+  outline: none;
+  background: var(--color-surface);
+  color: var(--color-black);
+  font-family: inherit;
+  min-width: 0;
+
+  &::placeholder {
+    color: var(--color-text-secondary);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0.6rem 1rem;
+    font-size: 0.9375rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0.5rem 0.875rem;
+    font-size: 0.875rem;
+  }
+}
+
+.searchButton {
+  height: 44px;
+  min-height: 36px;
+  width: 112px;
+  padding: 0 1.5rem;
+  background: var(--color-black);
+  color: var(--color-white);
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  white-space: nowrap;
+  font-family: inherit;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background: var(--color-black-pure);
+  }
+
+  &:active {
+    background: var(--color-black-scheme);
+  }
+
+  @media (max-width: 768px) {
+    width: 100px;
+    padding: 0 1.25rem;
+    font-size: 0.9375rem;
+  }
+
+  @media (max-width: 480px) {
+    width: 88px;
+    padding: 0 1rem;
+    font-size: 0.875rem;
+  }
+}

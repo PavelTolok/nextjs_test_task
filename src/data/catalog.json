@@ -1,0 +1,111 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "title": "Netflix Gift Card",
+      "brandId": "1",
+      "image": "/images/products/netflix-placeholder.jpg",
+      "price": 25
+    },
+    {
+      "id": "2",
+      "title": "Netflix Premium Gift Card",
+      "brandId": "1",
+      "image": "/images/products/netflix-premium-placeholder.jpg",
+      "price": 50
+    },
+    {
+      "id": "3",
+      "title": "Steam Wallet Code",
+      "brandId": "2",
+      "image": "/images/products/steam-placeholder.jpg",
+      "price": 20
+    },
+    {
+      "id": "4",
+      "title": "Steam Gift Card $50",
+      "brandId": "2",
+      "image": "/images/products/steam-50-placeholder.jpg",
+      "price": 50
+    },
+    {
+      "id": "5",
+      "title": "Apple Gift Card",
+      "brandId": "3",
+      "image": "/images/products/apple-placeholder.jpg",
+      "price": 100
+    },
+    {
+      "id": "6",
+      "title": "Apple App Store & iTunes",
+      "brandId": "3",
+      "image": "/images/products/apple-itunes-placeholder.jpg",
+      "price": 25
+    },
+    {
+      "id": "7",
+      "title": "Google Play Gift Card",
+      "brandId": "4",
+      "image": "/images/products/google-play-placeholder.jpg",
+      "price": 25
+    },
+    {
+      "id": "8",
+      "title": "Google Play $50",
+      "brandId": "4",
+      "image": "/images/products/google-play-50-placeholder.jpg",
+      "price": 50
+    },
+    {
+      "id": "9",
+      "title": "PlayStation Store Gift Card",
+      "brandId": "5",
+      "image": "/images/products/playstation-placeholder.jpg",
+      "price": 50
+    },
+    {
+      "id": "10",
+      "title": "PlayStation Plus 12 Months",
+      "brandId": "5",
+      "image": "/images/products/playstation-plus-placeholder.jpg",
+      "price": 60
+    }
+  ],
+  "brands": [
+    {
+      "id": "1",
+      "title": "Netflix",
+      "logo": "/images/brands/netflix-logo-placeholder.png"
+    },
+    {
+      "id": "2",
+      "title": "Steam",
+      "logo": "/images/products/steam.svg"
+    },
+    {
+      "id": "3",
+      "title": "Apple",
+      "logo": "/images/products/apple.svg"
+    },
+    {
+      "id": "4",
+      "title": "Google Play",
+      "logo": "/images/products/google_play.svg"
+    },
+    {
+      "id": "5",
+      "title": "PlayStation",
+      "logo": "/images/products/playstation.svg"
+    },
+    {
+      "id": "6",
+      "title": "Amazon",
+      "logo": "/images/products/amazon.svg"
+    },
+    {
+      "id": "7",
+      "title": "DAZN",
+      "logo": "/images/products/dazn.svg"
+    }
+  ]
+}

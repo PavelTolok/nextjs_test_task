@@ -1,0 +1,152 @@
+.section {
+  padding: 3rem 0;
+  background: var(--color-surface);
+
+  @media (max-width: 768px) {
+    padding: 2rem 0;
+  }
+}
+
+.scrollWrap {
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto 2rem;
+}
+
+.scrollTrack {
+  display: flex;
+  width: max-content;
+  animation: logoScroll 50s linear infinite;
+}
+
+@keyframes logoScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.cards {
+  display: flex;
+  align-items: stretch;
+  gap: 20px;
+  padding: 0.5rem 0;
+  padding-right: 20px;
+  flex-shrink: 0;
+}
+
+.card {
+  flex: 0 0 260px;
+  width: 260px;
+  background: linear-gradient(177deg, var(--color-gradient-start) 0%, var(--color-gradient-end) 100%);
+  border-radius: 16px;
+  padding-top: 20px;
+  padding-bottom: 1.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    flex: 0 0 200px;
+    width: 200px;
+    padding-top: 16px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.hangerTab {
+  position: relative;
+  width: 100%;
+  max-width: 124px;
+  height: 16px;
+  margin-bottom: 1.25rem;
+  flex-shrink: 0;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 26px;
+    width: 124px;
+    background: var(--color-white);
+    border-radius: 9999px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -10px;
+    transform: translateX(-50%);
+    width: 24px;
+    height: 26px;
+    background: var(--color-white);
+    border-radius: 12px 12px 0 0;
+  }
+}
+
+.logoWrap {
+  width: 212px;
+  height: 212px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+
+  @media (max-width: 768px) {
+    width: 160px;
+    height: 160px;
+    border-radius: 10px;
+  }
+}
+
+.logo {
+  object-fit: contain;
+  width: 180px;
+  height: 180px;
+
+  @media (max-width: 768px) {
+    width: 136px;
+    height: 136px;
+  }
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.shopAllButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  height: 44px;
+  padding: 0 2rem;
+  background: var(--color-black);
+  color: var(--color-white);
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: inherit;
+  transition: background 0.2s ease;
+  white-space: nowrap;
+
+  &:hover {
+    background: var(--color-black-pure);
+  }
+
+  &:active {
+    background: var(--color-black-scheme);
+  }
+}

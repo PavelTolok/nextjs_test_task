@@ -1,0 +1,240 @@
+.products {
+  padding: 4rem 0;
+  background: var(--color-surface);
+
+  @media (max-width: 768px) {
+    padding: 2.5rem 0;
+  }
+
+  @media (max-width: 480px) {
+    padding: 1.5rem 0;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  @media (max-width: 480px) {
+    padding: 0 1.25rem;
+  }
+}
+
+.title {
+  font-family: var(--font-satoshi);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.75rem;
+  line-height: 110%;
+  letter-spacing: -1.5px;
+  margin: 0 0 0.5rem;
+  text-align: center;
+  color: var(--color-black);
+  text-shadow: 0px 4px 4px var(--color-shadow);
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.5rem;
+    letter-spacing: -0.5px;
+  }
+}
+
+.subtitle {
+  font-family: var(--font-satoshi);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 120%;
+  letter-spacing: -0.78px;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+  color: var(--color-black);
+  max-width: 520px;
+
+  @media (max-width: 768px) {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+    padding: 0 0.5rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  @media (max-width: 600px) {
+    gap: 1rem;
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+.card {
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 1.5rem 2.8125rem 0 2.8125rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 24.25rem;
+
+  @media (max-width: 768px) {
+    height: auto;
+    min-height: 18rem;
+    padding: 1.25rem 1.5rem 0 1.5rem;
+  }
+
+  @media (max-width: 480px) {
+    min-height: 16rem;
+    padding: 1rem 1.25rem 0 1.25rem;
+    border-radius: 0.75rem;
+  }
+}
+
+.cardTitle {
+  font-family: var(--font-young-serif);
+  font-style: normal;
+  font-size: 2.5rem;
+  line-height: 120%;
+  letter-spacing: -1.5px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  text-align: center;
+  color: var(--color-black);
+
+  @media (max-width: 768px) {
+    font-size: 1.75rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.5rem;
+    letter-spacing: -0.5px;
+  }
+}
+
+.giftCard {
+  position: relative;
+  width: 100%;
+  max-width: 274px;
+  height: 100%;
+  min-height: 12rem;
+  background: linear-gradient(177deg, var(--color-gradient-start) 0%, var(--color-gradient-end) 100%);
+  border-radius: 6.42514px;
+  padding-top: 20px;
+  padding-bottom: 1.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 27px;
+
+  @media (max-width: 768px) {
+    margin-top: 1.25rem;
+    max-width: 220px;
+    padding-top: 1rem;
+  }
+
+  @media (max-width: 480px) {
+    margin-top: 1rem;
+    max-width: 180px;
+    min-height: 10rem;
+    padding-top: 0.75rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.hangerTab {
+  position: relative;
+  width: 56px;
+  height: 26px;
+  margin-bottom: 1rem;
+  flex-shrink: 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 79.67px;
+    height: 16.71px;
+    background: var(--color-surface-alt);
+    border-radius: 9999px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 2px;
+    transform: translateX(-50%);
+    width: 14.78px;
+    height: 16.71px;
+    background: var(--color-surface-alt);
+    border-radius: 14px 14px 0 0;
+  }
+
+  @media (max-width: 480px) {
+    margin-bottom: 0.75rem;
+
+    &::before {
+      width: 56px;
+      height: 12px;
+    }
+
+    &::after {
+      width: 12px;
+      height: 12px;
+      border-radius: 12px 12px 0 0;
+    }
+  }
+}
+
+.logoWrap {
+  width: 100%;
+  min-height: 100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 480px) {
+    min-height: 80px;
+  }
+}
+
+.logo {
+  object-fit: contain;
+  max-width: 136.1px;
+  max-height: 136.1px;
+  filter: brightness(0);
+
+  @media (max-width: 768px) {
+    max-width: 110px;
+    max-height: 110px;
+  }
+
+  @media (max-width: 480px) {
+    max-width: 90px;
+    max-height: 90px;
+  }
+}
